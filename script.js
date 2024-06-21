@@ -1,25 +1,49 @@
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
-let elementosVagas = document.querySelectorAll('.disponivelVaga');
-let vaga = document.getElementById('vagas')
+    let elementosVagas = document.querySelectorAll('#vaga')
+    elementosVagas.forEach(element => {
+   let vaga = element.querySelector('.disponivelVaga');
 
-// Converte o NodeList retornado por querySelectorAll para um array
-elementosVagas = Array.from(elementosVagas);
+   //botão pra trocar entre livre e ocupado
+   vaga.addEventListener('click', function() {
+        if (vaga.classList.contains('livre')) {
+            vaga.classList.toggle("livre");
+            vaga.classList.toggle("ocupado");
+        vaga.textContent = 'ocupado';
+            } else{
+                vaga.classList.toggle("livre");
+                vaga.classList.toggle("ocupado");
+            vaga.textContent = 'livre';
+            } 
+        }); 
+   
+    let removerVaga = element.querySelector('.remover');
+    removerVaga.addEventListener('click', function() {
+        if (vaga.classList.contains('ocupado')) {
+            alert('A vaga só pode ser removida quando estiver no estado "livre".');
+            } else{ element.remove() ;}
+        });
+    /*let botaoAdd = document.getElementById('adicionador') ;
+    let vagas = 10;
+    let adicionarVaga = document.createElement('div');
+    let novasVagas = document.getElementById('vagas')
+    let referencia = document.getElementById('vaga')
 
-// Agora, elementosVagas é um array que contém todos os elementos com a classe "disponivelVaga"
-//console.log(elementosVagas);
+    botaoAdd.addEventListener('click', function() {
+    //adicionarVaga.setAtribute('id', 'vaga' + vagas)
+    adicionarVaga.innerHTML = `<div id="vaga" class="row mb-4 text-center">
+    <button class="col-2 themed-grid-col remover">remover</button>
+    <div class="col-2 themed-grid-col">${vagas}</div>
+    <div class="col-2 themed-grid-col">Tempo</div>
+    <div class="col-2 themed-grid-col">preço</div>
+    <button class="col-2 themed-grid-col disponivelVaga livre">livre</button>
+  </div>`;
+  novasVagas.insertBefore(adicionarVaga, referencia);
+        vagas++;
+        });*/
 
-elementosVagas.forEach((disponibilidadeVaga) => { 
-let vagaEstado = disponibilidadeVaga.textContent.trim();
-
-    if (vagaEstado === 'livre') {
-    disponibilidadeVaga.textContent = 'ocupada';
-} else if (vagaEstado === 'ocupado') {
-    disponibilidadeVaga.textContent = 'livre';
-}});
-  });
-
-
+    });
+});
 
 
