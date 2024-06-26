@@ -11,78 +11,176 @@
 </head>
 <link rel="stylesheet" type="text/css" href="estilo.css">
 
-<div class="container">
+<div class="container-fluid text-center">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Vagas</a></li>
-        <button class="nav-item" id="adicionador"><a href="#" class="nav-link">Adicionar Vagas</a></button>
+        <button class="btn btn-secondary rounded-pill px-3" id="adicionador">Adicionar Vagas</button>
+      </div>
     </header>
   </div>
 <br><br>
+
 <div id="vagas">
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div class="row mb-4 justify-content-center ">
+  <div class="col-2 themed-grid-col">vagas</div>
+  <div class="col-2 themed-grid-col timer">tempo</div>
+  <div class="col-2 themed-grid-col preco">preço</div>
+</div>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">1</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga livre">livre</button>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">2</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga livre">livre</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">3</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga ocupado">ocupado</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">4</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga livre">livre</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">5</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga ocupado">ocupado</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">6</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga livre">livre</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">7</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga ocupado">ocupado</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">8</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button class="col-2 themed-grid-col disponivelVaga livre">livre</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
-  <div id="vaga" class="row mb-4 text-center">
-    <button class="col-2 themed-grid-col remover">remover</button>
+  <div id="vaga" class="row mb-4 justify-content-center ">
+    <button class="col-2 btn btn-danger rounded-pill px-3 remover">remover</button>
     <div class="col-2 themed-grid-col">9</div>
-    <div class="col-2 themed-grid-col">Tempo</div>
-    <div class="col-2 themed-grid-col">preço</div>
-    <button id="referenciaParaCriar" class="col-2 themed-grid-col disponivelVaga livre">livre</div>
+    <div class="col-2 themed-grid-col timer">00:00</div>
+    <div class="col-2 themed-grid-col preco">$5.00</div>
+    <button id="referenciaParaCriar" class="col-2 btn btn-light rounded-pill px-3 disponivelVaga livre">livre</button>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+      function initializeVaga(element) {
+          let vaga = element.querySelector('.disponivelVaga');
+          let timerElement = element.querySelector('.timer');
+          let precoElement = element.querySelector('.preco');
+          let seconds = 0;
+          let price = 5;
+          let timerInterval;
+  
+          function updateTimer() {
+              seconds++;
+              const minutes = Math.floor(seconds / 60);
+              const secs = seconds % 60;
+              timerElement.textContent = 
+                  (minutes < 10 ? "0" : "") + minutes + ":" + 
+                  (secs < 10 ? "0" : "") + secs;
+  
+              if (seconds % 60 === 0) {
+                  price += 2;
+                  precoElement.textContent = `$${price.toFixed(2)}`;
+              }
+          }
+  
+          function startTimer() {
+              timerInterval = setInterval(updateTimer, 1000);
+          }
+  
+          function stopTimer() {
+              clearInterval(timerInterval);
+          }
+  
+          // Botão para trocar entre livre e ocupado
+          vaga.addEventListener('click', function() {
+              if (vaga.classList.contains('livre')) {
+                  vaga.classList.toggle("livre");
+                  vaga.classList.toggle("ocupado");
+                  vaga.textContent = 'ocupado';
+                  startTimer(); // Inicia o timer quando a vaga está ocupada
+              } else {
+                  vaga.classList.toggle("livre");
+                  vaga.classList.toggle("ocupado");
+                  vaga.textContent = 'livre';
+                  stopTimer(); // Para o timer quando a vaga está livre
+                  seconds = 0; // Reinicia o timer
+                  price = 5; // Reinicia o preço
+                  timerElement.textContent = "00:00"; // Reseta o display do timer
+                  precoElement.textContent = "$5.00"; // Reseta o display do preço
+              }
+          });
+  
+          let removerVaga = element.querySelector('.remover');
+          removerVaga.addEventListener('click', function() {
+              if (vaga.classList.contains('ocupado')) {
+                  alert('A vaga só pode ser removida quando estiver no estado "livre".');
+              } else {
+                  stopTimer();
+                  element.remove();
+              }
+          });
+      }
+  
+      // Inicializa as vagas existentes
+      let elementosVagas = document.querySelectorAll('#vaga');
+      elementosVagas.forEach(element => {
+          initializeVaga(element);
+      });
+  
+      // Adiciona nova vaga ao clicar no botão
+      document.getElementById('adicionador').addEventListener('click', function() {
+          const vagas = document.getElementById('vagas');
+          const vaga = document.querySelector('#vaga').cloneNode(true);
+  
+          // Ajusta o índice das vagas
+          const index = vagas.children.length + 1;
+          vaga.querySelector('.col-2:nth-child(2)').textContent = index;
+  
+          // Reseta o timer e o preço na nova vaga
+          vaga.querySelector('.timer').textContent = "00:00";
+          vaga.querySelector('.preco').textContent = "$5.00";
+  
+          // Adiciona a nova vaga ao contêiner de vagas
+          vagas.appendChild(vaga);
+  
+          // Inicializa a nova vaga
+          initializeVaga(vaga);
+      });
+  });
+  </script>
+
+  
 
 <script src="script.js"></script>
