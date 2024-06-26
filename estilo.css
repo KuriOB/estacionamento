@@ -1,0 +1,25 @@
+#vaga {
+    background-color: #292929; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 20px
+}
+
+#vaga .themed-grid-col {
+    text-align: center; /* Centralizar texto */
+    padding: 5px 0; /* Espaçamento interno para itens */
+}
+
+#cabeca {
+    background-color: #292929; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 20px
+}
+
+#cabeca .themed-grid-col {
+    text-align: center; /* Centralizar texto */
+    padding: 5px 0; /* Espaçamento interno para itens */
+}
